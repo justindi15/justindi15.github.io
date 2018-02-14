@@ -1,3 +1,15 @@
 body{
 	background: White;
 }
+
+main {
+  background: white;
+  min-height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+}
