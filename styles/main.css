@@ -1,15 +1,24 @@
-body{
-	background: White;
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: white;
+    background-size: cover;
 }
 
-main {
-  background: white;
-  min-height: 100%;
-  width: 60%;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  resize: both;
+#title {
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+
+#mediarow {
+    margin: auto;
 }
