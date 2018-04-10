@@ -3,6 +3,13 @@ body, html{
     width: 100%;
     position: relative;
 }
+
+@media only screen and (max-width: 900px) {
+  #title-text{
+    font-size: 30px;
+  }
+}
+
 #background-carousel{
     opacity: 0;
     position:fixed;
