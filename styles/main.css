@@ -1,25 +1,92 @@
-#background {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: white;
-    background-size: cover;
-    opacity: 0.3;
+body, html{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#background-carousel{
+    opacity: 0;
+    position:fixed;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    animation: 2s ease-out fadein;
+    animation-fill-mode: forwards;
+}
+
+.carousel-inner {
+    width:100%;
+    height:100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.carousel-item {
+    width:100%;
+    height:100%;
+    background-position: center center;
+    z-index: 0;
+}
+
+.bgslide{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #title {
-    padding-top: 20%;
+    padding-top: 17%;
     padding-bottom: 20%;
 }
 
+#title-text {
+    opacity: 0;
+    animation: 0.75s ease-out 1s fadein;
+    animation-fill-mode: forwards;
+}
+
+#sub-text {
+    opacity: 0;
+    animation: 0.75s ease-out 2s fadein;
+    animation-fill-mode: forwards;
+}
 
 #mediarow {
+    opacity: 0;
     margin: auto;
+    animation: 1s ease-out 3s fadein;
+    animation-fill-mode: forwards;
+}
+
+.scrollbutton {
+    position: absolute;
+    bottom: 10px;
+    height: 40px;
+    animation-name: nextBtn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+
+
+.details{
+    margin: auto;
+    color: white;
+    width: 33%;
+    height: 100%;
+    padding-top: 20%;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes nextBtn {
+    0%  {transform: translateY(0);}
+    50% {transform: translateY(10px);}
+    100%    {transform: translateY(0);}
 }

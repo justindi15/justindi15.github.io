@@ -9,54 +9,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
 
 <body class="text-center">
 
-
-	<video autoplay loop muted poster="screenshot.jpg" id="background">
-        <source src="videos/background_video.mp4" type="video/mp4">
-    </video>
+<div id="background-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        	<img class="bgslide" src="images/image1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+        	<img class="bgslide" src="images/image2.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+        	<img class="bgslide" src="images/image3.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+        	<img class="bgslide" src="images/image4.jpg" alt="First slide">
+        </div>
+      </div>
+</div>
 
    <!-- Heading & Subheading container -->
 		<div class="container" id="title">
 
 
-			<h1 class="text-center">Hello World, I'm Justin.</h1>
-			<p class="text-center">let's get connected.</p>
+			<h1 id="title-text" class="display-4" style="color: white;">Hello World, I'm Justin.</h1>
+			<p id="sub-text" class="lead" style="color: white;">let's get connected.</p>
 			<br>
 
-			   	<div class="row" style="width:50%" id="mediarow">
-   				<div class="col-3">
+			   	<div class="row" style="width:20%" id="mediarow">
+   				<div class="col-6">
    					<a href="https://www.instagram.com/jjustindi/">
-   						<img border="0" src="images/ig_logo.png" alt="Instagram" width="40" height="40">
+   						<img border="0" src="icons/btn_instagram.svg" alt="Instagram" width="35px" height="35px">
    					</a>
    				</div>
-   				<div class="col-3">
+   				<div class="col-6">
    					<a href="https://www.facebook.com/justindi15">
-   						<img border="0" src="images/facebook_logo.png" alt="Facebook" width="40" height="40">
+   						<img border="0" src="icons/btn_facebook.svg" alt="Facebook" width="35px" height="35px">
    					</a>
    				</div>
-   				<div class="col-3">
+<!--    				<div class="col-4">
    					<a href="https://www.linkedin.com/in/justindi">
    						<img border="0" src="images/linkedin_logo.png" alt="LinkedIn" width="40" height="40">
    					</a>
-   				</div>
-   				<div class="col-3">
-   					<a href="https://www.behance.net/justindi159792">
-   						<img border="0" src="images/behance_logo.png" alt="Behance" width="40" height="40">
-   					</a>
-   				</div>
+   				</div> -->
    			</div>
 
-		</div>		
+
+   			<a class="scrollbutton" href="#description-text">
+   				<img src="icons/arrow_bottom.svg" alt="arrow_bottom">
+   			</a>
+
+		</div>
+
+<div class="details">
+	<p id="description-text">Nulla hendrerit aliquet dui, non venenatis mauris sagittis et. Quisque id felis ac orci efficitur rhoncus. Aenean sodales sem quis rhoncus iaculis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc id sapien eu dolor mattis vestibulum at ut elit. Donec eu arcu commodo, elementum arcu non, gravida metus. Integer in nulla neque. Duis non consequat ex. Aenean consequat quam vitae eros aliquam, sed imperdiet ante tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ante sit amet metus facilisis hendrerit. Fusce sodales felis at diam tempor tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+</div>
+
+
+
+
+
 
     <!-- JavaScript for Bootstrap -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 
 </html>
