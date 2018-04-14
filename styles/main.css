@@ -13,7 +13,7 @@ body, html{
 #background-carousel{
     opacity: 0;
     position:fixed;
-    height:100%;
+    height:100vh;
     width:100%;
     z-index: -1;
     animation: 2s ease-out fadein;
@@ -45,8 +45,7 @@ body, html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 663px;
-    height: 100vh;
+    height: 100%;
 }
 
 #title-text {
