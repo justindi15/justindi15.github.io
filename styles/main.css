@@ -12,6 +12,12 @@ a:hover {
     opacity: 0.5;
 }
 
+@media screen and (max-width: 640px) {
+	div.bio {
+		display: none;
+	}
+}
+
 
 #site-header {
 	z-index: 1100;
