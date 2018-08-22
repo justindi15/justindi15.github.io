@@ -14,8 +14,6 @@ a:hover {
     opacity: 0.5;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 @media screen and (min-width: 640px){
 	#bio {
 		font-size: 3vw;
@@ -26,16 +24,9 @@ a:hover {
 @media screen and (max-width: 640px){
 	#bio {
 		font-size: 25px;
-=======
-@media screen and (max-width: 640px) {
-	div.bio {
-		display: none;
->>>>>>> bde0577b2735fc60000fa353e29bca0fd3551461
 	}
 }
 
-=======
->>>>>>> dcbc124692ee568df4cf5777f123fd4e219f7c05
 
 #site-header {
 	z-index: 1100;
