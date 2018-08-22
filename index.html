@@ -99,7 +99,7 @@
         </div>
 
         <div class="nav-item" onmouseover="showSlide('slide5');" onmouseout="hideSlide('slide5');">
-          ABOUT ME
+          ABOUT
         </div>
       </div>
       
@@ -111,11 +111,13 @@
 function showSlide(x) {
     document.getElementById(x).style.opacity = "1";
     document.getElementById(x).style.zIndex = "10";
+    document.getElementById("bio").style.opacity = "0";
 }
 
 function hideSlide(x) {
     document.getElementById(x).style.opacity = "0";
     document.getElementById(x).style.zIndex = "1";
+    document.getElementById("bio").style.opacity = "1";
 }
 
 </script>
