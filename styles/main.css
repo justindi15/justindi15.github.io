@@ -18,12 +18,22 @@ a:hover {
 	#bio {
 		font-size: 3vw;
 	}
+
+	.slide-image {
+		height: 100%;
+	}
 }
 
 
 @media screen and (max-width: 640px){
 	#bio {
 		font-size: 25px;
+	}
+
+	.slide-image {
+		height: 50%;
+		margin-top: 50%;
+		transform: translateY(-50%);
 	}
 }
 
@@ -93,13 +103,15 @@ a:hover {
     right: 0;
     bottom: 0;
     text-align: center;
+    align-content: center;
 }
 
 .slide-image {
 	position: relative;
+	margin-left: 50%;
+	transform: translateX(-50%);
 	opacity: 0;
 	z-index: 1;
-	height: 100%;
 	transition: opacity 300ms 0ms ease-in-out;
 }
 
