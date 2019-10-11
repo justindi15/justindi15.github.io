@@ -81,7 +81,7 @@
 
       <div class="row" id="navbar">
         <div class="nav-item"">
-          <a href="indigo.html" onmouseover="showSlide('slide1');" onmouseout="hideSlide('slide1');">INDIGO PROJECT</a>
+          <a href="indigo.html" ontouchstart="handleTouch();" onmouseover="showSlide('slide1');" onmouseout="hideSlide('slide1');">INDIGO PROJECT</a>
         </div>
 
         <div class="nav-item" onmouseover="showSlide('slide2');" onmouseout="hideSlide('slide2');">
@@ -102,6 +102,10 @@
 
 
 <script>
+function handleTouch(){
+	preventDefault();
+}
+
 function showSlide(x) {
     document.getElementById(x).style.opacity = "1";
     document.getElementById(x).style.zIndex = "10";
